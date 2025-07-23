@@ -1,0 +1,583 @@
+.navbar {
+  background-color: #80808099;
+  backdrop-filter: blur(5px); 
+}
+
+.boton-consulta {
+  background-color: #c36909;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-consulta:hover {
+  background-color: #ebd1b2;
+  color: rgb(0, 0, 0);
+}
+
+.consulta-banner {
+  margin-top: 28px;
+}
+
+.max-image-container img {
+  width: 100%;
+  height: 95vh;
+  display: block;
+  object-fit: cover;
+}
+
+.serviciosPrimera {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.serviciosPrimera img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero {
+  color: rgba(255, 255, 255, 0);
+  position: relative;
+}
+
+.hero .overlay {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.info-section {
+  background-color: #f8f9fa00;
+}
+
+.main-box {
+  background-color: #ebd1b2dc;
+  border: 2px solid #ebd1b2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.text-content {
+  flex: 1 1 60%;
+  min-width: 300px;
+}
+
+.inner-box {
+  flex: 1 1 35%;
+  min-width: 260px;
+  background-color: #cedcd9b1;
+  border-left: 5px solid #cedcd9;
+  color: #000000;
+}
+
+.text-content h3 {
+  color: #000000;
+}
+
+.text-content p {
+  color: #000000;
+}
+
+.inner-box h5 {
+  color: #000000;
+}
+
+.inner-box ul {
+  padding-left: 20px;
+}
+
+.carousel-container {
+  background-color: #fdfdfd6b;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 15px #0000001a;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.carousel-inner img {
+  border-radius: 20px;
+  max-height: 450px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.carousel-inner img:hover {
+  transform: scale(1.03);
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.columna-izquierda {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.columna-derecha {
+  background-color: rgba(255, 255, 255, 0);
+  color:black;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.user-btn {
+  color: #198754; 
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.user-btn:hover,
+.user-btn:focus,
+.user-btn:active {
+  color: #198754 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.dropdown-menu a.dropdown-item {
+  color: #000000; /* verde */
+}
+
+.dropdown-menu a.dropdown-item:hover,
+.dropdown-menu a.dropdown-item:focus,
+.dropdown-menu a.dropdown-item:active {
+  color: #198754 ; 
+  background-color: transparent ;
+  box-shadow: none ;
+  outline: none ;
+}
+
+.educacion-cachorros {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+              url('Educan/assets/imaenes/alpha.jpg') no-repeat center center/cover;
+  min-height: 80vh;
+}
+
+.fondo-translucido {
+  background-color: rgba(0, 0, 0, 0.5);}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.index {
+  background-image: url('/EduCan/assets/imagenes/neo.jpg');
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+  padding-top: 30px;
+}
+
+.contenido-con-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.contenido-con-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff35;
+  z-index: -1;
+}
+
+body.servicios {
+  background-image: url('assets/Athena.jpg');
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+}
+
+body.usuariosA  {
+  background-image: url('Educan/assets/imagenes/lobo.jpg');
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.serviciosA   {
+  background-image: url('/EduCan/assets/imagenes/perroBlanco.jpg');
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.productosA  {
+  background-image: url('/EduCan/assets/imagenes/pitbull.jpg');
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.contactosA  {
+  background-image: url('/EduCan/assets/imagenes/wendy.jpg');
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.blogA   {
+  background-image: url('/EduCan/assets/imagenes/alpha.jpg');
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.configuracionA  {
+  background-image: url('/EduCan/assets/imagenes/athena.jpg');
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.seguridadA { 
+  background-image: url('/EduCan/assets/imagenes/collie.jpg');
+  font-family: 'Fredoka', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  
+body.inicioA {
+   background-image: url('/EduCan/assets/imagenes/perroNegro.jpg');
+   font-family: 'Fredoka', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+
+.sidebar {
+  width: 260px;
+  background: #cedcd9b4;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar h2 {
+  font-size: 28px;
+  margin-bottom: 32px;
+  font-weight: bold;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar a {
+  color: #000000;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 12px;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar a:hover {
+  background-color: #5e3131c1;
+  transform: scale(1.05);
+}
+
+.main {
+  flex: 1;
+  padding: 32px;
+  overflow-y: auto;
+  animation: slideIn 0.6s ease-in-out;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header img {
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+  background: #6585b4a6;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 4px 4px 0 #cedcd9;
+  border: 2px dashed #ebd1b2;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  transform: rotate(-1deg) scale(1.03);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card p {
+  font-size: 17px;
+  color: #ffffff;
+}
+
+form {
+  background: #6585b4a6;
+  padding: 28px;
+  border-radius: 20px;
+  border: 3px dotted #ebd1b2;
+  box-shadow: 0 6px 12px #cedcd9;
+  margin-bottom: 40px;
+}
+
+form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 16px;
+  border: 2px solid #5e3131; 
+  border-radius: 14px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #cedcd9;  
+  outline: none;
+}
+
+form button {
+  background-color: #6585b4;
+  color: white;
+  padding: 14px 28px;
+  border: 1px solid #000000; ;
+  border-radius: 14px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+form button:hover {
+  background-color: #cedcd9;
+  transform: scale(1.05);
+}
+
+.opciones-seguridad {
+  background: #6585b4a6;
+  padding: 24px;
+  border-radius: 18px;
+  border: 2px dashed #ebd1b2;
+  box-shadow: 0 4px 8px #cedcd9dc;
+  margin-bottom: 32px;
+}
+
+.opciones-seguridad h3 {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.opciones-seguridad ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.opciones-seguridad li {
+  font-size: 17px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.alerta {
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #fff3cd;
+  color: #ffffff;
+  border: 1px solid #ffeeba;
+  margin-bottom: 20px;
+}
+
+.alerta.success {
+  background-color: #d4edda;
+  color: #155724;
+  border-color: #c3e6cb;
+}
+
+.alerta.error {
+  background-color: #f8d7da;
+  color: #5e3131;
+  border-color: #f5c6cb;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.hero-tienda {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.hero-tienda img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+.hero-overlay h2 {
+  font-size: 2.5rem;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
+}
+
+.btn-orange {
+  background-color: #d87800;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.btn-orange:hover {
+  background-color: #a75800;
+  color: white;
+}
+
+.card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 250px;
+  object-fit: cover;
+}
