@@ -1,18 +1,15 @@
+require('dotenv').config();
 const express = require('express');
+const path = require('path');
 const app = express();
 const PORT = 3000;
 
-// Middleware para leer JSON
-app.use(express.json());
+// Servir archivos estáticos desde la carpeta public
+app.use(express.static(path.join(__dirname, 'public')));
 
-// Ruta base
+// Ruta principal
 app.get('/', (req, res) => {
-  res.send('Servidor Node (Educan) funcionando desde index.js');
-});
-
-// Ruta API de ejemplo
-app.get('/api/saludo', (req, res) => {
-  res.json({ mensaje: 'Hola desde Educan API' });
+  res.sendFile(path.join(__dirname, 'public/html/index.html'));
 });
 
 app.listen(PORT, () => {
